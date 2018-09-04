@@ -1,0 +1,247 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* hero image */
+
+.hero {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31rem;
+}
+
+/* header*/
+
+header {
+  background-color: cadetblue;
+  display: flex;
+  padding: 1rem 2rem;
+  position: relative;
+  top: 1rem;
+  align-items: center;
+  color: white;
+}
+
+header img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+header span {
+  text-align: left;
+}
+
+header nav {
+  text-align: right;
+  flex-grow: 1
+}
+
+nav li {
+  margin-left: 2rem;
+  display: inline;
+}
+
+.menu {
+  display: none;
+}
+
+/* tagline */
+
+.tagline {
+  position: relative;
+  top: 12.5rem;
+  float: right;
+  left: 2rem;
+  background-color: white;
+  padding: 2rem 4rem;
+}
+
+.tagline h1 {
+  font-size: 2rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+
+/* benfits */
+
+.benefits {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+.benefit img.paper {
+  width: 3.5rem;
+}
+
+.benefit img {
+  width: 5rem;
+}
+
+/* business info */
+
+.business-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.info h4 {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+/* footer */
+
+footer {
+  background-color: azure;
+  display: flex;
+  padding: 4rem 0 4rem 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .hero {
+    height: 22rem;
+  }
+
+  header {
+    top: 0;
+  }
+
+  .tagline {
+    top: 6.5rem;
+    margin-right: 2rem;
+    padding: 1.33rem 2.75rem;
+  }
+
+  .tagline h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .hero {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .tagline {
+    padding: 1rem;
+    width: 100%;
+    margin: 0;
+    top: 9rem;
+    font-size: 1rem;
+    text-align: center;
+    left: 0;
+  }
+
+  .tagline h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .benefits {
+    margin: 2.23rem 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    text-align: right;
+  }
+
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit {
+    margin-top: 1.25rem;
+    justify-content:flex-start;
+  }
+
+  .benefit img {
+    padding: 1rem;
+  }
+
+  .paper-icon {
+    margin-bottom: 1.33rem;
+  }
+
+  .business-info {
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  .info {
+    width: 96.1%;
+    margin-right: 0;
+  }
+
+  .info h4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info span {
+    padding: 0 1rem;
+  }
+
+  .appointments {
+    margin-top: 4rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+}
